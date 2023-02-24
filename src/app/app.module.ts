@@ -8,6 +8,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthComponent } from './componente/auth/auth.component';
 import { FormulariRegistroComponent } from './componente/formulari-registro/formulari-registro.component';
 import { ContactaConComponent } from './componente/contacta-con/contacta-con.component';
+import { HistorialComponent } from './componente/historial/historial.component';
+import { FooterComponent } from './componente/footer/footer.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { ContactaConComponent } from './componente/contacta-con/contacta-con.com
     AuthComponent,
     FormulariRegistroComponent,
     ContactaConComponent,
+    HistorialComponent,
+    FooterComponent,
     
   ],
   imports: [
