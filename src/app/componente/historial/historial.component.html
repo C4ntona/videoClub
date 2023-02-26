@@ -9,20 +9,22 @@
                     <th>Duración</th>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Rambo</td>
-                        <td>Pollone</td>
-                        <td>EEUU</td>
-                        <td>130 min</td>
-                    </tr>
-                    <tr>
-                        <td>Rambo</td>
-                        <td>Pollone</td>
-                        <td>EEUU</td>
-                        <td>130 min</td>
+                    <tr *ngFor="let pelicula of peliculas">
+                        <td>{{pelicula.titulo}}</td>
+                        <td>{{pelicula.director}}</td>
+                        <td>{{pelicula.nacionalidad}}</td>
+                        <td>{{pelicula.duracion}}</td>
                     </tr>
                 </tbody>
             </table>
+            <br>
+            <select class="form-select form-select-sm " aria-label=".form-select-sm example" (change)="ordenarLista()">
+                <option selected>Ordena la lista</option>
+                <option value="titulo">Títulone</option>
+                <option value="director">Director</option>
+                <option value="nacionalidad">Nacionalidad</option>
+            </select>
+            
         </div>
     </div>
    

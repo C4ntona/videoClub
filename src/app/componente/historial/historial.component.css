@@ -1,0 +1,10 @@
+.container{
+    background-color: rgba(73, 73, 73, 0.688);
+    opacity: 0.1;
+    border-top-left-radius: 7%;
+    border-top-right-radius: 7%;
+    border-top-color: black;
+}
+.container {
+    opacity: 1;
+}

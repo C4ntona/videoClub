@@ -10,6 +10,8 @@ import { FormulariRegistroComponent } from './componente/formulari-registro/form
 import { ContactaConComponent } from './componente/contacta-con/contacta-con.component';
 import { HistorialComponent } from './componente/historial/historial.component';
 import { FooterComponent } from './componente/footer/footer.component';
+import { HomeComponent } from './componente/home/home.component';
+
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { FooterComponent } from './componente/footer/footer.component';
     ContactaConComponent,
     HistorialComponent,
     FooterComponent,
+    HomeComponent,
+    
     
   ],
   imports: [

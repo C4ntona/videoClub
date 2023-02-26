@@ -4,6 +4,7 @@ import { AuthComponent } from './componente/auth/auth.component';
 import { ContactaConComponent } from './componente/contacta-con/contacta-con.component';
 import { FormulariRegistroComponent } from './componente/formulari-registro/formulari-registro.component';
 import { HistorialComponent } from './componente/historial/historial.component';
+import { HomeComponent } from './componente/home/home.component';
 import { MenuComponent } from './componente/menu/menu.component';
 
 const routes: Routes = [
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path:'auth',component:AuthComponent},
   {path:'formUser',component:FormulariRegistroComponent},
   {path:'contact',component:ContactaConComponent},
-  {path:'histor',component:HistorialComponent}
+  {path:'histor',component:HistorialComponent},
+  {path:'home',component:HomeComponent}
 ];
 
 @NgModule({
