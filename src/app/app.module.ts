@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,8 @@ import { ContactaConComponent } from './componente/contacta-con/contacta-con.com
 import { HistorialComponent } from './componente/historial/historial.component';
 import { FooterComponent } from './componente/footer/footer.component';
 import { HomeComponent } from './componente/home/home.component';
+import { HomeCarouselComponent } from './componente/home-carousel/home-carousel.component';
+import { MembresiaComponent } from './componente/membresia/membresia.component';
 
 
 
@@ -24,13 +27,16 @@ import { HomeComponent } from './componente/home/home.component';
     HistorialComponent,
     FooterComponent,
     HomeComponent,
+    HomeCarouselComponent,
+    MembresiaComponent,
     
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

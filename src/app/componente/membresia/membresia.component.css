@@ -1,6 +1,7 @@
 .contenedor {
-    width: 90%;
+    width: 40%;
     margin: auto;
+    justify-items: center;
 }
 
 .principal {
@@ -14,18 +15,23 @@
     background-position: center center;
     background-size: cover;
     margin-bottom: 3.12em;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    
-    
+    text-align: center;
     
 
 }
 
-.pelicula .titulo{
+.principal .titulo {
     font-weight: 600;
     font-size: 3.12em;
-    margin-top: 0.4em;
+    margin-top: 1em;
+    padding-top: 2em;
+    
+}
+.principal .imagen {
+    padding: 4em ;
+    
+}
+.principal .boton {
+    align-items: end;
     
 }
