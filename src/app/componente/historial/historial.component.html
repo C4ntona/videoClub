@@ -1,6 +1,9 @@
 <div class="contenedor principal">
     <div class="row-12">
         <div class="col-12">
+            
+                <input type="text" id="buscador" placeholder="Escribe para filtrar" (keyup)="tablaFiltrar()">
+          
             <table class="table table-success">
                 <thead>
                     <th>Título</th>
@@ -9,7 +12,7 @@
                     <th>Duración</th>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let pelicula of peliculas">
+                    <tr *ngFor="let pelicula of tablaFiltrada | async">
                         <td>{{pelicula.titulo}}</td>
                         <td>{{pelicula.director}}</td>
                         <td>{{pelicula.nacionalidad}}</td>
@@ -30,3 +33,5 @@
    
 
 </div>
+
+
