@@ -18,6 +18,10 @@ import { MembresiaComponent } from './componente/membresia/membresia.component';
 import { Ng2SearchPipeModule } from "ng2-search-filter";
 import { ReproductorVideoComponent } from './componente/reproductor-video/reproductor-video.component';
 import { PerfilComponent } from './componente/perfil/perfil.component';
+import { NgxEchartsModule } from 'ngx-echarts';
+
+
+
 
 @NgModule({
   declarations: [
@@ -42,6 +46,14 @@ import { PerfilComponent } from './componente/perfil/perfil.component';
     NgbModule,
     Ng2SearchPipeModule,
     HttpClientModule,
+    NgxEchartsModule.forRoot({
+        /**
+         * This will import all modules from echarts.
+         * If you only need custom modules,
+         * please refer to [Custom Build] section.
+         */
+        echarts: () => import('echarts'), // or import('./path-to-my-custom-echarts')
+      }),
   ],
   providers: [],
   bootstrap: [AppComponent]
