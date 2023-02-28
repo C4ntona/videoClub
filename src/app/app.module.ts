@@ -17,6 +17,7 @@ import { MembresiaComponent } from './componente/membresia/membresia.component';
 
 import { Ng2SearchPipeModule } from "ng2-search-filter";
 import { ReproductorVideoComponent } from './componente/reproductor-video/reproductor-video.component';
+import { PerfilComponent } from './componente/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ReproductorVideoComponent } from './componente/reproductor-video/reprod
     HomeCarouselComponent,
     MembresiaComponent,
     ReproductorVideoComponent,
+    PerfilComponent,
     
     
   ],

@@ -9,6 +9,7 @@ import { HomeComponent } from './componente/home/home.component';
 import { MembresiaComponent } from './componente/membresia/membresia.component';
 import { MenuComponent } from './componente/menu/menu.component';
 import { ReproductorVideoComponent } from "./componente/reproductor-video/reproductor-video.component";
+import { PerfilComponent } from "./componente/perfil/perfil.component";
 
 const routes: Routes = [
   {path:'menu',component:MenuComponent},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'carousel',component:HomeCarouselComponent},
   {path:'membre',component:MembresiaComponent},
-  {path:'reproductor', component:ReproductorVideoComponent}
+  {path:'reproductor', component:ReproductorVideoComponent},
+  {path:'perfil',component:PerfilComponent}
 ];
 
 @NgModule({
