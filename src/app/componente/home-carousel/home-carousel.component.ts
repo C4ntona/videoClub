@@ -8,25 +8,34 @@ import { Component } from '@angular/core';
 })
 export class HomeCarouselComponent {
   images = [
-    { src: '../../../assets/ecdla.jpg' },
-    { src: '../../../assets/first-bloodajpg.jpg' },
-    { src: '../../../assets/ichib.jpg' },
-    { src: '../../../assets/ecdla.jpg' },
-    { src: '../../../assets/first-bloodajpg.jpg' },
-    { src: '../../../assets/ichib.jpg' },
-    { src: '../../../assets/ecdla.jpg' },
-    { src: '../../../assets/first-bloodajpg.jpg' },
-    { src: '../../../assets/ichib.jpg' },
-    { src: '../../../assets/ecdla.jpg' },
-    { src: '../../../assets/first-bloodajpg.jpg' },
-    { src: '../../../assets/ichib.jpg' },
+    { src: '../../../assets/ecdla.jpg' ,alt: "El club de la ducha" },
+    { src: '../../../assets/first-bloodajpg.jpg',alt: "El club de la ducha" },
+    { src: '../../../assets/ichib.jpg' ,alt: "El club de la ducha"},
+    { src: '../../../assets/ecdla.jpg',alt: "El club de la ducha"},
+    { src: '../../../assets/first-bloodajpg.jpg' ,alt: "El club de la ducha"},
+    { src: '../../../assets/ichib.jpg' ,alt: "El club de la ducha"},
+    { src: '../../../assets/ecdla.jpg',alt: "El club de la ducha" },
+    { src: '../../../assets/first-bloodajpg.jpg',alt: "El club de la ducha" },
+    { src: '../../../assets/ichib.jpg' ,alt: "El club de la ducha"},
+    { src: '../../../assets/ecdla.jpg',alt: "El club de la ducha" },
+    { src: '../../../assets/first-bloodajpg.jpg',alt: "El club de la ducha" },
+    { src: '../../../assets/ichib.jpg',alt: "El club de la ducha" },
+    { src: '../../../assets/ecdla.jpg' ,alt: "El club de la ducha"},
+    { src: '../../../assets/first-bloodajpg.jpg' ,alt: "El club de la ducha"},
+    { src: '../../../assets/ichib.jpg',alt: "El club de la ducha" },
+    { src: '../../../assets/ecdla.jpg',alt: "El club de la ducha" },
+    { src: '../../../assets/first-bloodajpg.jpg' ,alt: "El club de la ducha"},
+    { src: '../../../assets/ichib.jpg' ,alt: "El club de la ducha"},
+    { src: '../../../assets/ecdla.jpg' ,alt: "El club de la ducha"},
+    { src: '../../../assets/first-bloodajpg.jpg' ,alt: "El club de la ducha"},
   ];
+
 
   numeroImagenes = 5;
 
   indiceActual = 0;
 
-  get imagenesAMostrar() {
+  get imagenesAMostrar(): any {
     const indiceInicio = Math.floor(this.indiceActual / this.numeroImagenes) * this.numeroImagenes;
     return this.images.slice(indiceInicio, indiceInicio + this.numeroImagenes);
   }

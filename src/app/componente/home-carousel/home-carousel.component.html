@@ -1,14 +1,14 @@
 
 <div class="peliculas-recomendadas contenedor">
     <div class="contenedor-titulo-controles">
-        <h3>Películas Recomendadas</h3>
+        <h3>Películas</h3>
         <div class="indicadores"></div>
     </div>
 <div class="contenedor-principal">
   <div class="contenedor-carousel">
     <div class="carousel" >
-      <div class="pelicula" *ngFor="let image of images">
-        <img [src]="image.src" alt="">
+      <div class="pelicula" *ngFor="let image of imagenesAMostrar">
+        <img [src]="image.src" alt="{{image.alt}}">
       </div>
     </div>
   </div>

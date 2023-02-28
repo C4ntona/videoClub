@@ -16,6 +16,7 @@ import { HomeCarouselComponent } from './componente/home-carousel/home-carousel.
 import { MembresiaComponent } from './componente/membresia/membresia.component';
 
 import { Ng2SearchPipeModule } from "ng2-search-filter";
+import { ReproductorVideoComponent } from './componente/reproductor-video/reproductor-video.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { Ng2SearchPipeModule } from "ng2-search-filter";
     HomeComponent,
     HomeCarouselComponent,
     MembresiaComponent,
+    ReproductorVideoComponent,
     
     
   ],
@@ -37,7 +39,7 @@ import { Ng2SearchPipeModule } from "ng2-search-filter";
     AppRoutingModule,
     NgbModule,
     Ng2SearchPipeModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

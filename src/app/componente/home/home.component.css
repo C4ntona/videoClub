@@ -13,8 +13,8 @@
     background-position: center center;
     background-size: cover;
     margin-bottom: 3.12em;
-    display: flex;
     align-items: end;
+	display: none;
 
 }
 .pelicula-principal .contenedor {

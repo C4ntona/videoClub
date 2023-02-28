@@ -8,6 +8,7 @@ import { HomeCarouselComponent } from './componente/home-carousel/home-carousel.
 import { HomeComponent } from './componente/home/home.component';
 import { MembresiaComponent } from './componente/membresia/membresia.component';
 import { MenuComponent } from './componente/menu/menu.component';
+import { ReproductorVideoComponent } from "./componente/reproductor-video/reproductor-video.component";
 
 const routes: Routes = [
   {path:'menu',component:MenuComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'histor',component:HistorialComponent},
   {path:'home',component:HomeComponent},
   {path:'carousel',component:HomeCarouselComponent},
-  {path:'membre',component:MembresiaComponent}
+  {path:'membre',component:MembresiaComponent},
+  {path:'reproductor', component:ReproductorVideoComponent}
 ];
 
 @NgModule({
