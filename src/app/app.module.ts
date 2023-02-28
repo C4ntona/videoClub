@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './componente/menu/menu.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthComponent } from './componente/auth/auth.component';
 import { FormulariRegistroComponent } from './componente/formulari-registro/formulari-registro.component';
 import { ContactaConComponent } from './componente/contacta-con/contacta-con.component';
@@ -46,6 +47,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
     NgbModule,
     Ng2SearchPipeModule,
     HttpClientModule,
+    FormsModule,
     NgxEchartsModule.forRoot({
         /**
          * This will import all modules from echarts.

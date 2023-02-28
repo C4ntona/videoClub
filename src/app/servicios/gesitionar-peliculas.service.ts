@@ -10,7 +10,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 })
 export class GesitionarPeliculasService {
 
-  private apiRestUrl = 'http://localhost:8080/ApiPeliculas'; 
+  private apiRestUrl = 'http://localhost:8080/video-symfony5/public/ApiPeliculas'; 
   constructor(private mensajeServicio: MensajesService, private http: HttpClient) { }
   getPeliculas(): Observable<Pelicula[]> {
               this.mensajeServicio.add('Servicio pelicula: recuperando pelicula');

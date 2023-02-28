@@ -2,7 +2,7 @@
     <div class="row-12">
         <div class="col-12">
             
-                <input type="text" id="buscador" placeholder="Escribe para filtrar" (keyup)="tablaFiltrar()">
+                <input type="text" id="buscador" placeholder="Escribe para filtrar" [(ngModel)]="buscador" (keyup)="tablaFiltrar()">
           
             <table class="table table-success">
                 <thead>
@@ -12,7 +12,7 @@
                     <th>Duración</th>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let pelicula of tablaFiltrada | async">
+                    <tr *ngFor="let pelicula of tablaFiltrada">
                         <td>{{pelicula.titulo}}</td>
                         <td>{{pelicula.director}}</td>
                         <td>{{pelicula.nacionalidad}}</td>

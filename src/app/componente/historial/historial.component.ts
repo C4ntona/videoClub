@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Pelicula } from 'src/app/interfaces/peliculas';
 import { Observable } from "rxjs";
+import { GesitionarPeliculasService } from "src/app/servicios/gesitionar-peliculas.service";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-historial',
@@ -8,7 +10,7 @@ import { Observable } from "rxjs";
   styleUrls: ['./historial.component.css']
 })
 export class HistorialComponent {
-    buscador: string ="";
+    buscador: string =""; 
     peliculas:Pelicula[]=[{
       titulo: "Rambo",
       director: "Pollone",
@@ -30,9 +32,18 @@ export class HistorialComponent {
       duracion: 130 ,
       nacionalidad: "EEUU"
     }];
-    tablaFiltrada: Observable<any[]>;
-    constructor(){
-      this.tablaFiltrada = new Observable(observer => {observer.next(this.peliculas)})
+    tablaFiltrada = this.peliculas;
+    constructor(private peliculaServicio:GesitionarPeliculasService,private router:Router){
+      
+    }
+    ngOnInit():void{
+        this.llamadaPeliculas();
+    }
+    llamadaPeliculas(){
+      this.peliculaServicio.getPeliculas().subscribe(datos =>{
+        this.peliculas = datos;
+        this.tablaFiltrada = this.peliculas;
+      })
     }
     //preguntar a fernando como poder ordenar por el atributo del objeto en angulares
     ordenarLista(){
@@ -43,10 +54,6 @@ export class HistorialComponent {
     }
     tablaFiltrar(){
       
-      this.buscador = (<HTMLInputElement>document.getElementById("buscador")).value;
-      this.tablaFiltrada = new Observable(observed => {
-        const tablaFiltrada = this.peliculas.filter(pelicula => pelicula.titulo.toLowerCase().includes(this.buscador.toLowerCase()));
-        observed.next(tablaFiltrada);
-      });
+      this.tablaFiltrada = this.peliculas.filter(pelicula => pelicula.titulo.toLowerCase().includes(this.buscador.toLowerCase()));
     }
 }
